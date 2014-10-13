@@ -1,5 +1,4 @@
-<h1>Spark Front-end</h1>
+## Google+ JavaScript Quickstart
 
-<h2>Google authentication</h2>
-
-
+The instructions for getting started are available at:
+https://developers.google.com/+/quickstart/javascript
