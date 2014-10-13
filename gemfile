@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'omniauth-openid'
 gem 'ruby-openid-apps-discovery'
+gem 'forecast_io'
 
 # group :development, :test do
 #   gem 'capybara'

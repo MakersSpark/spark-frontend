@@ -1,7 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.0)
+      faraday
+      hashie
+      multi_json
     hashie (3.3.1)
+    multi_json (1.10.1)
+    multipart-post (2.0.0)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -27,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  forecast_io
   omniauth-openid
   ruby-openid-apps-discovery
   sinatra
