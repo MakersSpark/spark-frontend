@@ -19,12 +19,15 @@
     </button>
   </div>
 
-  <form action="/" method="post">
-    <button type="submit">Forecast</button>
-  </form>
-
   <div>
-    <%= @forecast %>
+    <h3>Forecast weather</h3>
+
+    <p>Probability of rain <%= @forecast['currently']['precipProbability']%>%</p>
+    
+    <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
+    
+    <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> 
+
   </div>
 
 
