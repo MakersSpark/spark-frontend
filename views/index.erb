@@ -40,7 +40,7 @@
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
-        data-clientId="YOUR_CLIENT_ID"
+        data-clientId="825373276554-77u5rl2ne3sj7hl0k35k7ljsdarvnku4.apps.googleusercontent.com"
         data-callback="onSignInCallback"
         data-theme="dark"
         data-cookiepolicy="single_host_origin">
@@ -129,6 +129,29 @@ var helper = (function() {
         }
       });
     },
+
+    // disconnect: function() {
+    //   // Revoke the access token.
+    //   $.ajax({
+    //     type: 'GET',
+    //     url: 'https://accounts.google.com/o/oauth2/revoke?token=' +
+    //         gapi.auth.getToken().access_token,
+    //     async: false,
+    //     contentType: 'application/json',
+    //     dataType: 'jsonp',
+    //     success: function(result) {
+    //       console.log('revoke response: ' + result);
+    //       $('#authOps').hide();
+    //       $('#profile').empty();
+    //       $('#visiblePeople').empty();
+    //       $('#authResult').empty();
+    //       $('#gConnect').show();
+    //     },
+    //     error: function(e) {
+    //       console.log(e);
+    //     }
+    //   });
+    // },
 
     /**
      * Gets and renders the list of people visible to this app.
