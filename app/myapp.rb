@@ -10,9 +10,14 @@ require 'open-uri'
 require 'net/http'
 require 'rexml/document'
 
-#require 'nokogiri'
+require '../client_helper'
+
+include ClientHelper
 
 enable :sessions
+
+
+# Google Calendar 
 
 CREDENTIAL_STORE_FILE = "#{$0}-oauth2.json"
 
@@ -81,6 +86,9 @@ after do
   file_storage.write_credentials(user_credentials)
 end
 
+# End Google calendar
+
+
 get '/oauth2authorize' do
   # Request authorization
   redirect user_credentials.authorization_uri.to_s, 303
@@ -95,182 +103,20 @@ end
 
 get '/' do
 
-	forecast_raw = open("https://api.forecast.io/forecast/967ecda5e55eea73c15e3a4ce315e508/51.5231,-0.0871").read   
+	# Setting forecast, client_helper method 
 
-	forecast     = JSON.parse(forecast_raw)
+	set_forecast_api
 
+	
+	# Setting tfl, client_helper method 
 
-	url = 'http://cloud.tfl.gov.uk/TrackerNet/LineStatus'
-	xml_data = Net::HTTP.get_response(URI.parse(url)).body
+	set_tfl_api
 
-		# extract event information
-	doc = REXML::Document.new(xml_data)
+	# Setting Google Calendar, client_helper method 
 
+	set_google_cal_api
 
-	line_name   = []
-	line_status = []
-
-	doc.elements.each("ArrayOfLineStatus/LineStatus/Line/") do |ele|
-	   line_name << ele.attributes["Name"]
-	end
-
-	doc.elements.each("ArrayOfLineStatus/LineStatus/Status/") do |ele|
-	   line_status << ele.attributes["Description"]
-	end
-
-
-	# doc.elements.each('ResultSet/Result/Url') do |ele|
-	#    links << ele.text
-	# end
-
-	#tfl_raw      = Nokogiri::XML(open('http://cloud.tfl.gov.uk/TrackerNet/LineStatus'))
-
-	@tfl_lines   =  line_name
-	@tfl_status  =  line_status
-
-	#p tfl_raw.inner_html
-
-  # Fetch list of events on the user's default calendar
-  # @result = api_client.execute(:api_method => calendar_api.events.list,
-  #                             :parameters => {'calendarId' => 'primary'},
-  #                             :authorization => user_credentials)
-  # [@result.status, {'Content-Type' => 'application/json'}, @result.data.to_json]
-
-  # calendar = JSON.parse(@result.body)
-
-  #@calendar = calendar
-
-  page_token = nil
-	result = api_client.execute(:api_method => calendar_api.events.list,
-                              :parameters => {'calendarId' => 'primary'})
-while true
-  @events = result.data.items
-  # events.each do |e|
-  #   print e.summary + "\n"
-  # end
-  if !(page_token = result.data.next_page_token)
-    break
-  end
-  result = api_client.execute(:api_method => calendar_api.events.list,
-                              :parameters => {'calendarId' => 'primary',
-                                          'pageToken' => page_token})
-end
-
-  @forecast = forecast
-  erb :index
-end
-
-def formating_time(time)
-	time.strftime('%d,%m,%Y')
+	erb :index
 end
 
 
-# require 'net/http'
-# require 'rexml/document'
-
-# # Web search for "madonna"
-# url = 'http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&query=madonna&results=2'
-
-# # get the XML data as a string
-# xml_data = Net::HTTP.get_response(URI.parse(url)).body
-
-# # extract event information
-# doc = REXML::Document.new(xml_data)
-# titles = []
-# links = []
-# doc.elements.each('ResultSet/Result/Title') do |ele|
-#    titles << ele.text
-# end
-# doc.elements.each('ResultSet/Result/Url') do |ele|
-#    links << ele.text
-# end
-
-# # print all events
-# titles.each_with_index do |title, idx|
-#    print "#{title} => #{links[idx]}\n"
-# end
-
-
-
-
-
-# require 'sinatra'
-# require 'forecast_io'
-# require 'JSON'
-# require 'open-uri'
-# require 'google/api_client'
-# require 'yaml'
-
-
-# oauth_yaml = YAML.load_file('../.google-api.yaml')
-# client = Google::APIClient.new(options = { application_name: "spark-printer" })
-# client.authorization.client_id = oauth_yaml["client_id"]
-# client.authorization.client_secret = oauth_yaml["client_secret"]
-# client.authorization.scope = oauth_yaml["scope"]
-# client.authorization.scope = oauth_yaml["application_name"]
-# #client.authorization.refresh_token = oauth_yaml["refresh_token"]
-# client.authorization.access_token = oauth_yaml["access_token"]
-
-# if client.authorization.refresh_token && client.authorization.expired?
-#   client.authorization.fetch_access_token!
-# end
-
-# service = client.discovered_api('calendar', 'v3')
-
-
-
-# get '/' do
-# 	forecast_raw = open("https://api.forecast.io/forecast/967ecda5e55eea73c15e3a4ce315e508/51.5231,-0.0871").read   
-
-# 	forecast = JSON.parse(forecast_raw)
-
-# 	result = client.execute(:api_method => service.calendars.get,
-# 													:parameters => {'calendarId'=> 'ovm197v9n0jccgqraca5b351ko@group.calendar.google.com'})
-
-
-# 	p result
-
-# 	@forecast = forecast
-
-# 	@calendar = result
-# 	erb :index
-# end
-
-# get '/oauth2callback' do
-# end
-
-
-
-   
-# # 
-# # print my daily mood, 1 to 5 emoticons, prints name, date and image 
-# #
-
-# # server --> google-api oauth-2-login --scope=https://www.googleapis.com/auth/calendar --client-id=825373276554-4nfjhf0392tfmcggcf87o8fqiiefqgt6.apps.googleusercontent.com --client-secret=GJaevEUbbyUAPhgzplo4-Ckc
-
-# # client --> google-api oauth-2-login --scope=https://www.googleapis.com/auth/calendar --client-id=825373276554-grlp225vpg7o4e89ll9qfeugnsqkq78k.apps.googleusercontent.com --client-secret=bAR4AdShTZ7-gxDm2e9a4ucX
-
-
-# # https://www.googleapis.com/calendar/v3/calendars/ovm197v9n0jccgqraca5b351ko@group.calendar.google.com/events
-
-# =begin
-
-# require 'rubygems'
-# require 'google/api_client'
-# require 'yaml'
-
-# oauth_yaml = YAML.load_file('.google-api.yaml')
-# client = Google::APIClient.new
-# client.authorization.client_id = oauth_yaml["client_id"]
-# client.authorization.client_secret = oauth_yaml["client_secret"]
-# client.authorization.scope = oauth_yaml["scope"]
-# client.authorization.refresh_token = oauth_yaml["refresh_token"]
-# client.authorization.access_token = oauth_yaml["access_token"]
-
-# if client.authorization.refresh_token && client.authorization.expired?
-#   client.authorization.fetch_access_token!
-# end
-
-# service = client.discovered_api('calendar', 'v3')
-
-# =end

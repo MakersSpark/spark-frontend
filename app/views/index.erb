@@ -39,7 +39,7 @@
 
     <% if formating_time(item.start.dateTime) === formating_time(Time.new) %>
       
-     <p>Event date:        <%= item.start.dateTime %> </p>
+     <p>Event date:        <%= formating_time(item.start.dateTime) %> </p>
      <p>Event summary:     <%= item.summary %>        </p>
      <p>Event description: <%= item.description %>    </p>
      
