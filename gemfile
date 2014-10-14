@@ -1,15 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'omniauth-openid'
-gem 'ruby-openid-apps-discovery'
 gem 'forecast_io'
+gem 'google-api-client'
 
-# group :development, :test do
+group :development, :test do
 #   gem 'capybara'
 #   gem 'cucumber'
 #   gem 'cucumber-sinatra'
 #   gem 'launchy'
 #   gem 'rspec'
-#   gem 'shotgun'
-# end
+   gem 'shotgun'
+end

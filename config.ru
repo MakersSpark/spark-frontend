@@ -1,4 +1,4 @@
 require 'rubygems'
-require_relative '../app/myapp.rb'
+require '../app/myapp.rb'
 
 run myapp

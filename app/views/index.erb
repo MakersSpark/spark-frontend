@@ -12,7 +12,7 @@
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
-        data-clientId="825373276554-rd7dhcogppodlbeh0cklp2rq3kaer0cq.apps.googleusercontent.com"
+        data-clientId="825373276554-grlp225vpg7o4e89ll9qfeugnsqkq78k.apps.googleusercontent.com"
         data-callback="onSignInCallback"
         data-theme="dark"
         data-cookiepolicy="single_host_origin">
@@ -26,8 +26,18 @@
     
     <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
     
-    <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> 
+    <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > 
 
+  </div>
+
+  <div>
+    
+    <h3>Calendar</h3>
+    
+    <%= @calendar.description %> <br>
+    <%= @calendar.title %><br>
+    <%= @calendar.name %><br>
+    <%= @calendar.calendar_list %>
   </div>
 
 
