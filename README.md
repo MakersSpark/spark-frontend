@@ -58,13 +58,14 @@ require 'JSON'
 
 # Server side
 
-forecast_raw = open("https://api.forecast.io/forecast/967ecda5e55eea73c15e3a4ce315e508/51.5231,-0.0871").read   
+forecast_raw = open("https://api.forecast.io/forecast/967ecda5e515e3a4ce315e508/51.5231,-0.0871").read   
 
 forecast     = JSON.parse(forecast_raw)
 
 @forecast = forecast
+```
 
-
+```erb
 # Client side
 	<div>
 	  <h3>Forecast weather</h3>
