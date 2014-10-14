@@ -34,10 +34,18 @@
     
     <h3>Calendar</h3>
     
+    <% @events.each do | item | %>
 
-    <%= @calendar %><br>
-  
-     
+    <% if formating_time(item.start.dateTime) === formating_time(Time.new) %>
+      
+     <p> <%= item.summary %> </p>
+     <p> <%= item.start.dateTime %> </p>
+
+     <%end%>
+
+    <%end%>
+
+     <!-- ['id']['cbl9addeiiv9if1v07s2r8j68k']['summary'] -->
   </div>
 
 

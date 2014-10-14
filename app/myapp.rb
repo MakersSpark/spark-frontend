@@ -95,18 +95,37 @@ get '/' do
 	forecast = JSON.parse(forecast_raw)
 
   # Fetch list of events on the user's default calendar
-  @result = api_client.execute(:api_method => calendar_api.events.list,
-                              :parameters => {'calendarId' => 'primary'},
-                              :authorization => user_credentials)
-  [@result.status, {'Content-Type' => 'application/json'}, @result.data.to_json]
+  # @result = api_client.execute(:api_method => calendar_api.events.list,
+  #                             :parameters => {'calendarId' => 'primary'},
+  #                             :authorization => user_credentials)
+  # [@result.status, {'Content-Type' => 'application/json'}, @result.data.to_json]
 
-  calendar = JSON.parse(@result.body)
+  # calendar = JSON.parse(@result.body)
+
+  #@calendar = calendar
+
+  page_token = nil
+	result = api_client.execute(:api_method => calendar_api.events.list,
+                              :parameters => {'calendarId' => 'primary'})
+while true
+  @events = result.data.items
+  # events.each do |e|
+  #   print e.summary + "\n"
+  # end
+  if !(page_token = result.data.next_page_token)
+    break
+  end
+  result = api_client.execute(:api_method => calendar_api.events.list,
+                              :parameters => {'calendarId' => 'primary',
+                                          'pageToken' => page_token})
+end
 
   @forecast = forecast
-  
-  @calendar = calendar
-
   erb :index
+end
+
+def formating_time(time)
+	time.strftime('%d,%m,%Y')
 end
 
 # require 'sinatra'
