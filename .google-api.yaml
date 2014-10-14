@@ -1,0 +1,7 @@
+mechanism: oauth_2
+scope: https://www.googleapis.com/auth/calendar
+client_id: 825373276554-4nfjhf0392tfmcggcf87o8fqiiefqgt6.apps.googleusercontent.com
+client_secret: GJaevEUbbyUAPhgzplo4-Ckc
+access_token: ya29.ngD2wYS8HtiSvgTILOzeTJB8OQ80H-eLEemzCuq5FMFNDkKvv52MnWWH
+application_name: spark-printer
+#refresh_token
