@@ -1,94 +1,121 @@
-<h1>Spark Front-end</h1>
+# Spark Front-end APIs
 
-<h2>Google authentication</h2>
+### Google Calendar
+
+[Google API Docs]()
+
+```ruby
+
+# Server side
+
+page_token = nil
+
+result = api_client.execute(:api_method => calendar_api.events.list,
+                            :parameters => {'calendarId' => 'primary'})
+
+while true
+  @events = result.data.items
+  if !(page_token = result.data.next_page_token)
+    break
+  end
+  result = api_client.execute(:api_method =>   calendar_api.events.list,
+                              :parameters => {'calendarId' => 'primary',
+                                              'pageToken' => page_token})
+end
 
 
-### Possible methods for Calendar API
+# Client side
+ 
+ <h3>Calendar</h3>
 
-:acl
-:calendar_list
-:calendars
-:channels
-:colors
-:events
-:freebusy
-:settings
-:discovery_document
-:id
-:name
-:version
-:title
-:description
-:documentation
-:preferred
-:features
-:data_wrapper?
-:document_base
-:method_base
-:method_base=
-:batch_path
-:schemas
-:schema_for_kind
-:discovered_resources
-:discovered_methods
-:[]
-:to_h
-:inspect
-:_dump
-:psych_to_yaml
-:to_yaml
-:to_yaml_properties
-:to_json
-:nil?
-:===
-:=~
-:!~
-:eql?
-:hash
-:<=>
-:class
-:singleton_class
-:clone
-:dup
-:taint
-:tainted?
-:untaint
-:untrust
-:untrusted?
-:trust
-:freeze
-:frozen?
-:to_s
-:methods
-:singleton_methods
-:protected_methods
-:private_methods
-:public_methods
-:instance_variables
-:instance_variable_get
-:instance_variable_set
-:instance_variable_defined?
-:remove_instance_variable
-:instance_of?
-:kind_of?
-:is_a?
-:tap
-:send
-:public_send
-:respond_to?
-:extend
-:display
-:method
-:public_method
-:define_singleton_method
-:object_id
-:to_enum
-:enum_for
-:==
-:equal?
-:!
-:!=
-:instance_eval
-:instance_exec
-:__send__
-:__id__]
+<% @events.each do | item | %>
+
+<% if formating_time(item.start.dateTime) === formating_time(Time.new) %>
+  
+ <p>Event date:        <%= item.start.dateTime %> </p>
+ <p>Event summary:     <%= item.summary %>        </p>
+ <p>Event description: <%= item.description %>    </p>
+ 
+ <p>Event location:    <%= item.location %>       </p>
+
+ <%end%>
+
+<%end%>
+
+```
+
+
+### Forecast.io
+
+[Forecast API Docs](https://developer.forecast.io/docs/v2)
+
+```ruby
+require 'forecast_io'
+require 'open-uri'
+require 'JSON'
+
+# https://api.forecast.io/forecast/token_key/latitude,longitude
+
+# Server side
+
+forecast_raw = open("https://api.forecast.io/forecast/967ecda5e55eea73c15e3a4ce315e508/51.5231,-0.0871").read   
+
+forecast     = JSON.parse(forecast_raw)
+
+@forecast = forecast
+
+
+# Client side
+	<div>
+	  <h3>Forecast weather</h3>
+
+	  <p>Probability of rain <%= @forecast['currently']['precipProbability']%>%</p>
+	  
+	  <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
+	  
+	  <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > 
+
+	</div>
+```
+
+### TFL (Transport for London)
+
+[TFL API Docs](http://www.tfl.gov.uk/info-for/open-data-users/)
+
+```ruby
+# http://cloud.tfl.gov.uk/TrackerNet/LineStatus --> XML format
+
+# Server side
+
+require 'net/http'
+require 'rexml/document'
+
+url = 'http://cloud.tfl.gov.uk/TrackerNet/LineStatus'
+xml_data = Net::HTTP.get_response(URI.parse(url)).body
+
+	# extract event information
+doc = REXML::Document.new(xml_data)
+
+
+line_name   = []
+status_line = []
+
+doc.elements.each("ArrayOfLineStatus/LineStatus/Line/")   do |ele|
+   line_name << ele.attributes["Name"]
+end
+
+doc.elements.each("ArrayOfLineStatus/LineStatus/Status/") do |ele|
+   status_line << ele.attributes["Description"]
+end
+
+# Client Side
+	<h3>Tube Status</h3>
+
+	<ul>
+	  <% @tfl_lines.zip(@tfl_status).each do |line,status|  %>
+	    
+	    <li> <%=line%>   </li>
+	    <li> <%=status%> </li>
+	  <%end%>
+	</ul>
+```
