@@ -1,0 +1,1617 @@
+{
+"kind": "calendar#events",
+"etag": "\"1413284478025000\"",
+"summary": "byverdu@gmail.com",
+"updated": "2014-10-14T11:01:18.025Z",
+"timeZone": "Europe/London",
+"accessRole": "owner",
+"defaultReminders": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+],
+"nextSyncToken": "CKj6nfr-q8ECEKj6nfr-q8ECGAU=",
+"items": [
+{
+"kind": "calendar#event",
+"etag": "\"2814815711228000\"",
+"id": "otb4a19h6jcbc0qqhb3e0p7pro",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=b3RiNGExOWg2amNiYzBxcWhiM2UwcDdwcm8gYnl2ZXJkdUBt",
+"created": "2014-08-06T12:04:32.000Z",
+"updated": "2014-08-07T10:37:35.673Z",
+"summary": "YOGA",
+"creator": {
+"email": "dana@makersacademy.com",
+"displayName": "Dana Svoboda"
+},
+"organizer": {
+"email": "dana@makersacademy.com",
+"displayName": "Dana Svoboda"
+},
+"start": {
+"dateTime": "2014-08-07T11:25:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-07T12:10:00+01:00"
+},
+"iCalUID": "otb4a19h6jcbc0qqhb3e0p7pro@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "dana@makersacademy.com",
+"displayName": "Dana Svoboda",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/yoga?hceid=ZGFuYUBtYWtlcnNhY2FkZW15LmNvbQ.otb4a19h6jcbc0qqhb3e0p7pro",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2815856866837000\"",
+"id": "_cdi3ap9p6ks34bb66hgm4b9k6cp3eb9pcli6cb9gcphmcoj164p32eb26o",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=X2NkaTNhcDlwNmtzMzRiYjY2aGdtNGI5azZjcDNlYjlwY2xpNmNiOWdjcGhtY29qMTY0cDMyZWIyNm8gYnl2ZXJkdUBt",
+"created": "2014-07-21T08:47:14.000Z",
+"updated": "2014-08-13T11:27:41.854Z",
+"summary": "Tim Perry Softwire Talk - Open Source",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-13T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-13T13:30:00+01:00"
+},
+"iCalUID": "cd5e9582-f4ab-4327-9edf-0fcfba1219b6",
+"sequence": 0,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "june-2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/calendar/bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._cdi3ap9p6ks34bb66hgm4b9k6cp3eb9pcli6cb9gcphmcoj164p32eb26o",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2816227446731000\"",
+"id": "_6osj0d9j6sqjabb360pjcb9kclh64bb260rjabb260qm6c9n6dhjge316c",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZvc2owZDlqNnNxamFiYjM2MHBqY2I5a2NsaDY0YmIyNjByamFiYjI2MHFtNmM5bjZkaGpnZTMxNmMgYnl2ZXJkdUBt",
+"created": "2014-07-29T11:14:19.000Z",
+"updated": "2014-08-16T17:42:04.870Z",
+"summary": "Talk Rob ASOS",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-14T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-14T13:30:00+01:00"
+},
+"iCalUID": "69053755-c036-4ebb-b075-b05c173c88a3",
+"sequence": 1,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "june-2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/ruben?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._6osj0d9j6sqjabb360pjcb9kclh64bb260rjabb260qm6c9n6dhjge316c",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2816709786444000\"",
+"id": "akf3a38jcohs2scduamhf600vs",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=YWtmM2EzOGpjb2hzMnNjZHVhbWhmNjAwdnMgYnl2ZXJkdUBt",
+"created": "2014-08-15T14:02:13.000Z",
+"updated": "2014-08-18T11:30:32.494Z",
+"summary": "Testing doubles with Hannah",
+"location": "Bean bags",
+"creator": {
+"email": "alex@makersacademy.com",
+"displayName": "Alex Peattie"
+},
+"organizer": {
+"email": "makersacademy.com_lm5cnkd9s71ma2ce81aspd50l0@group.calendar.google.com",
+"displayName": "Lesson Plan"
+},
+"start": {
+"dateTime": "2014-08-18T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-18T09:30:00+01:00"
+},
+"iCalUID": "akf3a38jcohs2scduamhf600vs@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "alex@makersacademy.com",
+"displayName": "Alex Peattie",
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/testing-doubles?hceid=bWFrZXJzYWNhZGVteS5jb21fbG01Y25rZDlzNzFtYTJjZTgxYXNwZDUwbDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.akf3a38jcohs2scduamhf600vs",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2817416627173000\"",
+"id": "88uq36guqkjnhtduv32e9dh4b8",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=ODh1cTM2Z3Vxa2puaHRkdXYzMmU5ZGg0YjggYnl2ZXJkdUBt",
+"created": "2014-08-19T10:53:25.000Z",
+"updated": "2014-08-24T15:55:48.072Z",
+"summary": "Hash methods with Jeremy",
+"location": "Bean bags",
+"creator": {
+"email": "alex@makersacademy.com",
+"displayName": "Alex Peattie"
+},
+"organizer": {
+"email": "makersacademy.com_lm5cnkd9s71ma2ce81aspd50l0@group.calendar.google.com",
+"displayName": "Lesson Plan"
+},
+"start": {
+"dateTime": "2014-08-20T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-20T09:30:00+01:00"
+},
+"iCalUID": "88uq36guqkjnhtduv32e9dh4b8@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "alex@makersacademy.com",
+"displayName": "Alex Peattie",
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/hash-methods?hceid=bWFrZXJzYWNhZGVteS5jb21fbG01Y25rZDlzNzFtYTJjZTgxYXNwZDUwbDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.88uq36guqkjnhtduv32e9dh4b8",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 0
+},
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2822070272870000\"",
+"id": "_75j30chkcorjcb9kcdgj4b9kclh68b9ocoo30b9g70rm8dr26oqjccpg6s",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=Xzc1ajMwY2hrY29yamNiOWtjZGdqNGI5a2NsaDY4YjlvY29vMzBiOWc3MHJtOGRyMjZvcWpjY3BnNnMgYnl2ZXJkdUBt",
+"created": "2014-08-27T10:30:42.000Z",
+"updated": "2014-09-18T10:12:16.478Z",
+"summary": "Lunch TIme Chat with Marti and Matteo from Alphasights",
+"location": "Makers",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-09-16T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-16T13:30:00+01:00"
+},
+"iCalUID": "9f024f76-4ca2-4ebd-8f00-087d7b656307",
+"sequence": 0,
+"attendees": [
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki",
+"responseStatus": "accepted"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"extendedProperties": {
+"shared": {
+"sunrise:place": "{\"name\":\"Makers\",\"address\":{}}"
+}
+},
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/lunch-time?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._75j30chkcorjcb9kcdgj4b9kclh68b9ocoo30b9g70rm8dr26oqjccpg6s",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2820179021782000\"",
+"id": "_6ks3ehi388rk4ba38p330b9k6kp3iba18h0j2b9p89332cpn64qjah9p84",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZrczNlaGkzODhyazRiYTM4cDMzMGI5azZrcDNpYmExOGgwajJiOXA4OTMzMmNwbjY0cWphaDlwODQgYnl2ZXJkdUBt",
+"created": "2014-07-30T16:19:55.000Z",
+"updated": "2014-09-18T10:33:41.487Z",
+"summary": "Talk by Greg MWR InfoSecurity",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-27T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-27T13:30:00+01:00"
+},
+"iCalUID": "587FCB7B-CFF0-4529-ADA1-9BF137155E9A",
+"sequence": 5,
+"attendees": [
+{
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki",
+"responseStatus": "accepted"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "june-2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/ruben?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._6ks3ehi388rk4ba38p330b9k6kp3iba18h0j2b9p89332cpn64qjah9p84",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2821977354694000\"",
+"id": "2c3qbubrn7te430ks30bip6544",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=MmMzcWJ1YnJuN3RlNDMwa3MzMGJpcDY1NDQgYnl2ZXJkdUBt",
+"created": "2014-09-16T10:33:02.000Z",
+"updated": "2014-09-18T10:36:47.667Z",
+"summary": "CSS Tips with Maya and Albert!",
+"description": "We're going to talk your ears off about CSS.",
+"location": "Beanbags",
+"creator": {
+"email": "mayadrivermd@gmail.com",
+"displayName": "Maya Driver"
+},
+"organizer": {
+"email": "mayadrivermd@gmail.com",
+"displayName": "Maya Driver"
+},
+"start": {
+"dateTime": "2014-09-17T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-17T10:00:00+01:00"
+},
+"iCalUID": "2c3qbubrn7te430ks30bip6544@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "mayadrivermd@gmail.com",
+"displayName": "Maya Driver",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2820778678080000\"",
+"id": "_6sqj0ga5710kaba370qjcb9k890j6ba26os4ab9o6kqk2d236924adpo88",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZzcWowZ2E1NzEwa2FiYTM3MHFqY2I5azg5MGo2YmEyNm9zNGFiOW82a3FrMmQyMzY5MjRhZHBvODggYnl2ZXJkdUBt",
+"created": "2014-08-07T08:05:52.000Z",
+"updated": "2014-09-18T10:37:11.964Z",
+"summary": "Deloitte Digital - LTC",
+"description": "Martin from Deloitte Digital will be coming in to talk :) get so questions ready :)",
+"location": "Makers",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-09-03T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-03T15:00:00+01:00"
+},
+"iCalUID": "750AE8AE-C856-4BA3-B68E-855A4C2DE78B",
+"sequence": 15,
+"attendees": [
+{
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki",
+"responseStatus": "declined"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "maraspeli@deloitte.co.uk",
+"displayName": "Martin X (UK - London) Aspeli",
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/new-event?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._6sqj0ga5710kaba370qjcb9k890j6ba26os4ab9o6kqk2d236924adpo88",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2820087516579000\"",
+"id": "440a953as8gfk83ovk6bppng2c",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=NDQwYTk1M2FzOGdmazgzb3ZrNmJwcG5nMmMgYnl2ZXJkdUBt",
+"created": "2014-05-05T11:42:15.000Z",
+"updated": "2014-09-18T10:37:46.569Z",
+"summary": "Talk Cristiano Paypal",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-26T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-26T14:00:00+01:00"
+},
+"iCalUID": "440a953as8gfk83ovk6bppng2c@google.com",
+"sequence": 1,
+"attendees": [
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "june-2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2819758572061000\"",
+"id": "mkjpib6cqk8l118ccbs6safb9o",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=bWtqcGliNmNxazhsMTE4Y2NiczZzYWZiOW8gYnl2ZXJkdUBt",
+"created": "2014-08-08T07:11:01.000Z",
+"updated": "2014-09-18T10:38:01.225Z",
+"summary": "Talks Night",
+"description": "Hey Makers,\n\nit is that time of the year again! What am I talking about?\n\nIn order to be a good developer we need to work on more than just our technical skills. As you know our social and communication skills are as important as our technical ability.\n\nHere comes the challenge!\n\nIn order to improve your speaking abilities (and particularly your public speaking ones) we, every now and then, organise a talk night â„¢!\n\nWhatâ€™s it all about?\n\nDuring the talk night â„¢  we will hear 5 minute long talks in different styles and about different themes. Every person (student or not) attending the talk night â„¢ will have to give such a presentation.\n\nThe presentations will be either pecha kucha style (PechaKucha 20x20 is a simple presentation format where you show 20 images, each for 20 seconds. The images advance automatically and you talk along to the images; http://www.pechakucha.org) or ignite style (In Ignite each speakers gets 5 minutes, and must use 20 slides with each slide advancing automatically after 15 seconds, forcing speakers to get to the point, fast; http://igniteshow.com).\n\nWhy should you attend?\n\n- it is fun\n- itâ€™s a safe environment\n- itâ€™s fun\n- you build confidence in public speaking\n- itâ€™s fun\n- people have very interesting things to share\n- it is fun\n\nDid I mention that itâ€™s fun?\n\nWho should give a talk?\n\nYOU (the reader of this email)!\n\nThat is everyone is invited to give a talk, the more the merrier!\n\nWhat should I talk about?\n\nYou can prepare a talk about anything that you are passionate about; anything counts!\n\nExamples of talks that we have heard before:\n\n- silent movies\n- golf\n- the day the germans invaded the USA\n- anime movies\n- musical theatre\n- charity work in Africa\n- improvised talks\n- concrete (the material)\n\nActually you can talk about anything at all!\n\nSo, whatâ€™s next?\n\nStart preparing your talk! And get yourself ready for some fun!\n\nThe talk night â„¢  will be held on Friday the 22th of August starting at 5:00pm!\n\nItâ€™s going to be awesome!\n\n    \nEnrique",
+"location": "Main Area (Bean Bags)",
+"creator": {
+"email": "ecomba@makersacademy.com",
+"displayName": "Enrique Comba Riepenhausen"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-22T17:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-22T18:00:00+01:00"
+},
+"iCalUID": "mkjpib6cqk8l118ccbs6safb9o@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "team@makersacademy.com",
+"displayName": "Makers Academy Team",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/talks-night?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.mkjpib6cqk8l118ccbs6safb9o",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2822101048832000\"",
+"id": "_60q6acpg6lh36b9pccr6cb9kccr3ibb16ksmcb9p6co32d3564p68c1n6s",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTZhY3BnNmxoMzZiOXBjY3I2Y2I5a2NjcjNpYmIxNmtzbWNiOXA2Y28zMmQzNTY0cDY4YzFuNnMgYnl2ZXJkdUBt",
+"created": "2014-09-02T13:27:40.000Z",
+"updated": "2014-09-19T17:00:33.659Z",
+"summary": "Lunchtime time talk",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-09-17T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-17T13:30:00+01:00"
+},
+"iCalUID": "04e305b3-9c6f-4c69-a59f-93014e12d077",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/august-samantha?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._60q6acpg6lh36b9pccr6cb9kccr3ibb16ksmcb9p6co32d3564p68c1n6s",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2822746444999000\"",
+"id": "v4gfk017usij0se346i50h27co",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=djRnZmswMTd1c2lqMHNlMzQ2aTUwaDI3Y28gYnl2ZXJkdUBt",
+"created": "2014-09-16T10:26:58.000Z",
+"updated": "2014-09-22T08:43:01.254Z",
+"summary": "Bitwise with Dave",
+"description": "Fun, geeky and entirely irrelevant talk about the bitwise operators in Ruby (and in general). Now with added (badly executed) maths. Bring coffee.",
+"location": "Beanbag valley.",
+"creator": {
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes"
+},
+"organizer": {
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes"
+},
+"start": {
+"dateTime": "2014-09-22T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-22T09:30:00+01:00"
+},
+"iCalUID": "v4gfk017usij0se346i50h27co@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2819602006119000\"",
+"id": "psekrk5qghfspt2rb4amli8q3g",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=cHNla3JrNXFnaGZzcHQycmI0YW1saThxM2cgYnl2ZXJkdUBt",
+"created": "2014-08-07T13:58:20.000Z",
+"updated": "2014-09-30T18:10:05.313Z",
+"summary": "Lunch at FORGE & CO :)",
+"description": "All meet in reception at 13:40 and we go together ",
+"location": "Forge & Co, 154 Shoreditch High St, London, United Kingdom",
+"creator": {
+"email": "dana@makersacademy.com",
+"displayName": "Dana Svoboda"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-08T13:40:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-08T15:00:00+01:00"
+},
+"iCalUID": "psekrk5qghfspt2rb4amli8q3g@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "team@makersacademy.com",
+"displayName": "Makers Academy Team",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/lunch-at-forge?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.psekrk5qghfspt2rb4amli8q3g",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2820535474106000\"",
+"id": "bs2b88bt3nnj526pdfgvb53jt4",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=YnMyYjg4YnQzbm5qNTI2cGRmZ3ZiNTNqdDQgYnl2ZXJkdUBt",
+"created": "2014-08-15T14:01:28.000Z",
+"updated": "2014-09-30T18:10:09.879Z",
+"summary": "Array methods with Jean",
+"location": "Bean bags",
+"creator": {
+"email": "alex@makersacademy.com",
+"displayName": "Alex Peattie"
+},
+"organizer": {
+"email": "makersacademy.com_lm5cnkd9s71ma2ce81aspd50l0@group.calendar.google.com",
+"displayName": "Lesson Plan"
+},
+"start": {
+"dateTime": "2014-08-19T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-19T09:30:00+01:00"
+},
+"iCalUID": "bs2b88bt3nnj526pdfgvb53jt4@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "June 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/array-methods?hceid=bWFrZXJzYWNhZGVteS5jb21fbG01Y25rZDlzNzFtYTJjZTgxYXNwZDUwbDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.bs2b88bt3nnj526pdfgvb53jt4",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2820554078577000\"",
+"id": "_c4sjio9p64o3gb9kc8s30b9k60o3ib9pcpgj0bb6cco6aopg69h3cp1h64",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=X2M0c2ppbzlwNjRvM2diOWtjOHMzMGI5azYwbzNpYjlwY3BnajBiYjZjY282YW9wZzY5aDNjcDFoNjQgYnl2ZXJkdUBt",
+"created": "2014-07-29T10:39:07.000Z",
+"updated": "2014-09-30T18:10:11.229Z",
+"summary": "Guest talk by Suranga Chandratillake, partner at Balderton Capital",
+"creator": {
+"email": "evgeny@makersacademy.com",
+"displayName": "Evgeny Shadchnev"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-08-19T13:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-08-19T14:00:00+01:00"
+},
+"iCalUID": "a99a9108-4b80-4009-9fa0-fc0ec02b6d11",
+"sequence": 3,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "june-2014@makersacademy.com",
+"displayName": "june-2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "evgeny@makersacademy.com",
+"displayName": "Evgeny Shadchnev",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/evgeny?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._c4sjio9p64o3gb9kc8s30b9k60o3ib9pcpgj0bb6cco6aopg69h3cp1h64",
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2823649002038000\"",
+"id": "7p3hbaifjplquitvhe2gu1e5qg",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=N3AzaGJhaWZqcGxxdWl0dmhlMmd1MWU1cWcgYnl2ZXJkdUBt",
+"created": "2014-09-22T10:08:37.000Z",
+"updated": "2014-09-30T18:10:32.743Z",
+"summary": "Command Line Mods",
+"description": "Like an episode of Pimp my Ride but with less bass and more colours",
+"location": "bean bags",
+"creator": {
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil"
+},
+"organizer": {
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil"
+},
+"start": {
+"dateTime": "2014-09-24T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-24T09:30:00+01:00"
+},
+"iCalUID": "7p3hbaifjplquitvhe2gu1e5qg@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2823850795353000\"",
+"id": "_c5h36c9n65h6ab9i61i3ab9k64rjgb9oc4p3ib9h6di32opmcdj66dj4ck",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=X2M1aDM2YzluNjVoNmFiOWk2MWkzYWI5azY0cmpnYjlvYzRwM2liOWg2ZGkzMm9wbWNkajY2ZGo0Y2sgYnl2ZXJkdUBt",
+"created": "2014-09-22T15:08:44.000Z",
+"updated": "2014-09-30T18:10:35.624Z",
+"summary": "Week 8 Presentation - Placements",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-09-26T16:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-09-26T17:00:00+01:00"
+},
+"iCalUID": "ab3171be-20d5-4178-8a29-13d1c6cfc6de",
+"sequence": 0,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki",
+"responseStatus": "accepted"
+},
+{
+"email": "ecomba@makersacademy.com",
+"displayName": "Enrique Comba Riepenhausen",
+"responseStatus": "tentative"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2824473674690000\"",
+"id": "jqakp5btsq95q6vhr7bgo3sj1o",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=anFha3A1YnRzcTk1cTZ2aHI3YmdvM3NqMW8gYnl2ZXJkdUBt",
+"created": "2014-10-01T10:43:46.000Z",
+"updated": "2014-10-02T08:00:37.345Z",
+"summary": "Hip Hip Array!",
+"description": "A celebration of Array methods in Ruby with Dave and Tatiana. Dress casual. Bring coffee.",
+"location": "The land of a thousand bean-bags",
+"creator": {
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes"
+},
+"organizer": {
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes"
+},
+"start": {
+"dateTime": "2014-10-02T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-02T09:30:00+01:00"
+},
+"visibility": "public",
+"iCalUID": "jqakp5btsq95q6vhr7bgo3sj1o@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "team@makersacademy.com",
+"displayName": "Makers Academy Team",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "dave.wickes@gmail.com",
+"displayName": "David Wickes",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2824434181458000\"",
+"id": "_6gsjcc9i6hj64bb5clgmcb9k6srj6bb26ks3ib9jccs3ior3cos32c1ncc",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZnc2pjYzlpNmhqNjRiYjVjbGdtY2I5azZzcmo2YmIyNmtzM2liOWpjY3MzaW9yM2NvczMyYzFuY2MgYnl2ZXJkdUBt",
+"created": "2014-09-25T11:07:19.000Z",
+"updated": "2014-10-02T17:59:57.704Z",
+"summary": "Lunchtime Talk By David, from Methods",
+"creator": {
+"email": "samantha@makersacademy.com",
+"displayName": "Samantha Harris"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-10-01T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-01T13:30:00+01:00"
+},
+"iCalUID": "496124fb-eeaf-4773-b589-3c89ccf8107c",
+"sequence": 0,
+"attendees": [
+{
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki",
+"responseStatus": "accepted"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": false,
+"overrides": [
+{
+"method": "popup",
+"minutes": 30
+},
+{
+"method": "email",
+"minutes": 30
+}
+]
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2825372503326000\"",
+"id": "_6ormcp9m6co3ab9k6thjeb9k6sqj0bb169h6cbb668sjac1m70p30c1n70",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZvcm1jcDltNmNvM2FiOWs2dGhqZWI5azZzcWowYmIxNjloNmNiYjY2OHNqYWMxbTcwcDMwYzFuNzAgYnl2ZXJkdUBt",
+"created": "2014-08-14T16:44:01.000Z",
+"updated": "2014-10-07T12:50:51.663Z",
+"summary": "Talk by Benji, co-founder of Pic Fair",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-10-07T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-07T13:30:00+01:00"
+},
+"iCalUID": "67fe6305-47c7-4750-a2bf-f29506820078",
+"sequence": 1,
+"attendees": [
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/august-ruben?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ._6ormcp9m6co3ab9k6thjeb9k6sqj0bb169h6cbb668sjac1m70p30c1n70",
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2825691475586000\"",
+"id": "38s1cm1jn1jlgpirrmtl6ss7ho",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=MzhzMWNtMWpuMWpsZ3BpcnJtdGw2c3M3aG8gYnl2ZXJkdUBt",
+"created": "2014-10-07T11:20:15.000Z",
+"updated": "2014-10-09T09:08:57.793Z",
+"summary": "No church in the wild: public-private key infrastructure and the one thing you should never do",
+"description": "The most important lecture. ever.",
+"location": "bean bags",
+"creator": {
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil"
+},
+"organizer": {
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil"
+},
+"start": {
+"dateTime": "2014-10-09T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-09T09:30:00+01:00"
+},
+"iCalUID": "38s1cm1jn1jlgpirrmtl6ss7ho@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "james.r.mcneil@gmail.com",
+"displayName": "James McNeil",
+"organizer": true,
+"responseStatus": "accepted"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "accepted"
+}
+],
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2825714446300000\"",
+"id": "_74s6aeb1ccp3eb9j68q62b9kc4oj2b9p68o3cb9m61j3eopl74r3ic1l6c",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=Xzc0czZhZWIxY2NwM2ViOWo2OHE2MmI5a2M0b2oyYjlwNjhvM2NiOW02MWozZW9wbDc0cjNpYzFsNmMgYnl2ZXJkdUBt",
+"created": "2014-09-16T10:59:28.000Z",
+"updated": "2014-10-09T12:20:23.150Z",
+"summary": "Talk UX Design Jamie Stanton",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-10-09T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-09T13:30:00+01:00"
+},
+"iCalUID": "98e9ac27-324a-4a11-9206-60f7c5969053",
+"sequence": 0,
+"attendees": [
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2826235894244000\"",
+"id": "v2u8gkm0npec35kqmpa6klp9ds",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=djJ1OGdrbTBucGVjMzVrcW1wYTZrbHA5ZHMgYnl2ZXJkdUBt",
+"created": "2014-10-06T01:43:57.000Z",
+"updated": "2014-10-12T12:45:47.122Z",
+"summary": "awesome maps for your apps (or why always choosing Google is boring)",
+"description": "a dizzying array of colours and symbols! Data formats, demos & things you need to consider when choosing a provider. Ask anything else you want to know about online maps.",
+"location": "beanbags!",
+"creator": {
+"email": "globalavocado@gmail.com",
+"displayName": "Kevin Daniells"
+},
+"organizer": {
+"email": "globalavocado@gmail.com",
+"displayName": "Kevin Daniells"
+},
+"start": {
+"dateTime": "2014-10-15T09:00:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-15T09:30:00+01:00"
+},
+"transparency": "transparent",
+"iCalUID": "v2u8gkm0npec35kqmpa6klp9ds@google.com",
+"sequence": 7,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "team@makersacademy.com",
+"displayName": "Makers Academy Team",
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "accepted"
+},
+{
+"email": "globalavocado@gmail.com",
+"displayName": "Kevin Daniells",
+"organizer": true,
+"responseStatus": "accepted"
+}
+],
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2826437415986000\"",
+"id": "_6hh62d9gc5j36b9o6kp6ab9kc8ojcbb1ckr3ibb1c4q34p1p74r3gopj6o",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=XzZoaDYyZDlnYzVqMzZiOW82a3A2YWI5a2M4b2pjYmIxY2tyM2liYjFjNHEzNHAxcDc0cjNnb3BqNm8gYnl2ZXJkdUBt",
+"created": "2014-10-13T10:04:31.000Z",
+"updated": "2014-10-13T16:45:07.993Z",
+"summary": "Talk by Estimote.com Dev Evangelist",
+"creator": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"organizer": {
+"email": "ruben@makersacademy.com",
+"displayName": "Ruben Kostucki"
+},
+"start": {
+"dateTime": "2014-10-22T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-22T13:30:00+01:00"
+},
+"iCalUID": "4ba50af3-852e-4b16-ae69-aa42d9968c36",
+"sequence": 0,
+"attendees": [
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+},
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/talk-by?hceid=cnViZW5AbWFrZXJzYWNhZGVteS5jb20._6hh62d9gc5j36b9o6kp6ab9kc8ojcbb1ckr3ibb1c4q34p1p74r3gopj6o",
+"reminders": {
+"useDefault": true
+}
+},
+{
+"kind": "calendar#event",
+"etag": "\"2826568956050000\"",
+"id": "cbl9addeiiv9if1v07s2r8j68k",
+"status": "confirmed",
+"htmlLink": "https://www.google.com/calendar/event?eid=Y2JsOWFkZGVpaXY5aWYxdjA3czJyOGo2OGsgYnl2ZXJkdUBt",
+"created": "2014-10-06T11:41:41.000Z",
+"updated": "2014-10-14T11:01:18.025Z",
+"summary": "Ada Lovelace Day: Women in Tech: What are the real issues? Or do they not exist and we should talk less and just get on with it?",
+"description": "Join us on our lunchtime panel to celebrate Ada Lovelace day. We will be having a panel discussion with some of our female makers on the issues around women in tech or maybe they don't exist? Either way we would love to hear your opinion. \n\nSpeakers Confirmed:\n\n- Sarah Young\n- Zoe Bryant\n\n*Other speakers to be confirmed* ",
+"location": "Makers Academy, Epworth House, 25 City Rd, London EC1Y 1AA, United Kingdom",
+"creator": {
+"email": "arfah@makersacademy.com",
+"displayName": "Arfah Farooq"
+},
+"organizer": {
+"email": "makersacademy.com_jf3r3c3vu43mslp07ddsh7e570@group.calendar.google.com",
+"displayName": "Makers Academy Events"
+},
+"start": {
+"dateTime": "2014-10-14T12:30:00+01:00"
+},
+"end": {
+"dateTime": "2014-10-14T13:30:00+01:00"
+},
+"iCalUID": "cbl9addeiiv9if1v07s2r8j68k@google.com",
+"sequence": 0,
+"attendees": [
+{
+"email": "september-2014@makersacademy.com",
+"displayName": "September 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "team@makersacademy.com",
+"displayName": "Makers Academy Team",
+"responseStatus": "needsAction"
+},
+{
+"email": "august-2014@makersacademy.com",
+"displayName": "August 2014",
+"responseStatus": "needsAction"
+},
+{
+"email": "y.sarahc@gmail.com",
+"displayName": "Sarah Young",
+"responseStatus": "accepted"
+},
+{
+"email": "zoeabryant@gmail.com",
+"displayName": "Zoe Bryant",
+"responseStatus": "accepted"
+},
+{
+"email": "mfolsom@gmail.com",
+"displayName": "Megan Folsom",
+"responseStatus": "accepted"
+},
+{
+"email": "dana@makersacademy.com",
+"displayName": "Dana Svoboda",
+"responseStatus": "accepted"
+},
+{
+"email": "byverdu@gmail.com",
+"displayName": "Albert Vallverdu",
+"self": true,
+"responseStatus": "needsAction"
+}
+],
+"hangoutLink": "https://plus.google.com/hangouts/_/makersacademy.com/ada-lovelace?hceid=bWFrZXJzYWNhZGVteS5jb21famYzcjNjM3Z1NDNtc2xwMDdkZHNoN2U1NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.cbl9addeiiv9if1v07s2r8j68k",
+"reminders": {
+"useDefault": true
+}
+}
+]
+}
