@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'forecast_io'
 gem 'google-api-client'
+gem 'nokogiri'
+
 
 # group :development, :test do
 # #   gem 'capybara'

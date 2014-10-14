@@ -7,6 +7,11 @@ require 'JSON'
 require 'forecast_io'
 require 'open-uri'
 
+require 'net/http'
+require 'rexml/document'
+
+#require 'nokogiri'
+
 enable :sessions
 
 CREDENTIAL_STORE_FILE = "#{$0}-oauth2.json"
@@ -92,7 +97,38 @@ get '/' do
 
 	forecast_raw = open("https://api.forecast.io/forecast/967ecda5e55eea73c15e3a4ce315e508/51.5231,-0.0871").read   
 
-	forecast = JSON.parse(forecast_raw)
+	forecast     = JSON.parse(forecast_raw)
+
+
+	url = 'http://cloud.tfl.gov.uk/TrackerNet/LineStatus'
+	xml_data = Net::HTTP.get_response(URI.parse(url)).body
+
+		# extract event information
+	doc = REXML::Document.new(xml_data)
+
+
+	line_name   = []
+	line_status = []
+
+	doc.elements.each("ArrayOfLineStatus/LineStatus/Line/") do |ele|
+	   line_name << ele.attributes["Name"]
+	end
+
+	doc.elements.each("ArrayOfLineStatus/LineStatus/Status/") do |ele|
+	   line_status << ele.attributes["Description"]
+	end
+
+
+	# doc.elements.each('ResultSet/Result/Url') do |ele|
+	#    links << ele.text
+	# end
+
+	#tfl_raw      = Nokogiri::XML(open('http://cloud.tfl.gov.uk/TrackerNet/LineStatus'))
+
+	@tfl_lines   =  line_name
+	@tfl_status  =  line_status
+
+	#p tfl_raw.inner_html
 
   # Fetch list of events on the user's default calendar
   # @result = api_client.execute(:api_method => calendar_api.events.list,
@@ -127,6 +163,36 @@ end
 def formating_time(time)
 	time.strftime('%d,%m,%Y')
 end
+
+
+# require 'net/http'
+# require 'rexml/document'
+
+# # Web search for "madonna"
+# url = 'http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&query=madonna&results=2'
+
+# # get the XML data as a string
+# xml_data = Net::HTTP.get_response(URI.parse(url)).body
+
+# # extract event information
+# doc = REXML::Document.new(xml_data)
+# titles = []
+# links = []
+# doc.elements.each('ResultSet/Result/Title') do |ele|
+#    titles << ele.text
+# end
+# doc.elements.each('ResultSet/Result/Url') do |ele|
+#    links << ele.text
+# end
+
+# # print all events
+# titles.each_with_index do |title, idx|
+#    print "#{title} => #{links[idx]}\n"
+# end
+
+
+
+
 
 # require 'sinatra'
 # require 'forecast_io'
