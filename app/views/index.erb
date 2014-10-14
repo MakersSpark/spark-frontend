@@ -36,17 +36,34 @@
     
     <% @events.each do | item | %>
 
+
     <% if formating_time(item.start.dateTime) === formating_time(Time.new) %>
       
-     <p> <%= item.summary %> </p>
-     <p> <%= item.start.dateTime %> </p>
+     <p>Event date:        <%= item.start.dateTime %> </p>
+     <p>Event summary:     <%= item.summary %>        </p>
+     <p>Event description: <%= item.description %>    </p>
+     
+     <p>Event location:    <%= item.location %>       </p>
 
      <%end%>
 
-    <%end%>
 
-     <!-- ['id']['cbl9addeiiv9if1v07s2r8j68k']['summary'] -->
+    <%end%>
   </div>
+
+  <h3>Tube Status</h3>
+
+  <ul>
+    <% @tfl_lines.zip(@tfl_status).each do |line,status|  %>
+      
+      <li> <%=line%>   </li>
+      <li> <%=status%> </li>
+    <%end%>
+  </ul>
+  
+
+    
+
 
 
   <div id="authOps" style="display:none">
