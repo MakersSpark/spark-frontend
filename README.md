@@ -10,31 +10,46 @@ https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.
 
 ```ruby
 require 'open-uri'
-require 'nokogiri'
+require 'icalendar'
 require 'htmlentities' # NEEDS TO BE ADDED TO GEMFILE
 
 # download the calendar and load it as a Nokogiri object
-calendar = Nokogiri::XML(open("https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.com/public/basic"))
-```
+calendar = Icalendar.parse(open("https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.com/public/basic"))
 
-#### Basic operations
+# NOTE! This returns an array of calendars if there are more than one
+# in the ics document. 
 
-```ruby
-# gets the title of the first event in the calendar, for example
-calendar.css("feed entry title").first.text
-# => "St. David&#39;s Day"
+calendar.class # => Array
+calendar.first.class # => Icalendar::Calendar
 
-# we need to remove all the HTML gubbins, so 
-coder = HTMLEntities.new
-coder.decode(calendar.css("feed entry title").first.text)
-# => "St. David's Day"
+calendar.first.events # returns all events in the calendar
+calendar.first.events.first.summary # => "St. David's Day"
+
+calendar.first.events.first.today? # false
 ```
 
 #### Getting all of today's events
 
 ```ruby
 
+# assuming 'calendar' is an array of calendars, as in the above example
+
+todays_events = []
+
+calendar.first.events.each do |e|
+  # put all of today's events into an array
+  todays_events << e if e.dtstart.today?
+  todays_events
+end
+
+todays_events.each do |e|
+  puts "#{e.dtstart.strftime("%H:%M")}  #{e.summary}"
+end
 ```
+
+In this example, I would get something like
+
+`09:00  awesome maps for your apps (or why always choosing Google is boring)`
 
 ### Google Calendar
 
