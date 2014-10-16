@@ -34,12 +34,11 @@ calendar.first.events.first.today? # false
 
 # assuming 'calendar' is an array of calendars, as in the above example
 
-todays_events = []
-
 calendar.first.events.each do |e|
   # put all of today's events into an array
+  todays_events = []
   todays_events << e if e.dtstart.today?
-  todays_events
+  todays_events.reverse!
 end
 
 todays_events.each do |e|
