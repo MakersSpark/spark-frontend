@@ -31,7 +31,7 @@ require 'icalendar' # add to Gemfile!
 
 ```ruby
 
-# assuming 'calendar' is an array of calendars, as in the above example
+# assuming '@calendar' is an array of calendars, as in the above example
 
 def get_todays_events
   @todays_events = []
@@ -42,8 +42,16 @@ def get_todays_events
   @todays_events.reverse!
 end
 
+get_todays_events
+
 @todays_events.each do |e|
-  puts "#{e.dtstart.strftime("%H:%M")}  #{e.summary}"
+  if Time.now.zone == "BST"
+    eventtime = e.dtstart + 3600
+    puts "#{eventtime.strftime("%H:%M")}  #{e.summary}"
+  else
+    eventtime = e.dtstart
+    puts "#{e.dtstart.strftime("%H:%M")}  #{e.summary}"
+  end
 end
 ```
 
