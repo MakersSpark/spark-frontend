@@ -35,12 +35,12 @@ calendar.first.events.first.today? # false
 
 calendar.first.events.each do |e|
   # put all of today's events into an array
-  todays_events = []
-  todays_events << e if e.dtstart.today?
-  todays_events.reverse!
+  @todays_events = []
+  @todays_events << e if e.dtstart.today?
+  @todays_events.reverse!
 end
 
-todays_events.each do |e|
+@todays_events.each do |e|
   puts "#{e.dtstart.strftime("%H:%M")}  #{e.summary}"
 end
 ```
