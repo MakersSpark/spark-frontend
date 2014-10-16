@@ -12,7 +12,6 @@ https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.
 require 'open-uri'
 require 'icalendar' # add to Gemfile!
 
-# download the calendar and load it as a Nokogiri object
 @calendar = Icalendar.parse(open("https://www.google.com/calendar/ical/henrystanley.com_uh7l5drs1sfnju9eivnml389k8%40group.calendar.google.com/private-95d6172bf50f4f3783be77c8a0dfce42/basic.ics"))
 
 # NOTE! This returns an array of calendars if there are more than one
@@ -31,7 +30,10 @@ require 'icalendar' # add to Gemfile!
 
 ```ruby
 
-# assuming '@calendar' is an array of calendars, as in the above example
+require 'open-uri'
+require 'icalendar' # add to Gemfile!
+
+@calendar = Icalendar.parse(open("https://www.google.com/calendar/ical/henrystanley.com_uh7l5drs1sfnju9eivnml389k8%40group.calendar.google.com/private-95d6172bf50f4f3783be77c8a0dfce42/basic.ics"))
 
 def get_todays_events
   @todays_events = []
@@ -57,7 +59,12 @@ end
 
 In this example, I would get something like
 
-`09:00  awesome maps for your apps (or why always choosing Google is boring)`
+```
+10:00  Learning PASCAL with Enrique
+11:30  Spark Printer team meeting
+14:30  Lovis talks about teamwork
+17:00  Demo: life at 1000WPM with Ethel
+```
 
 ### Google Calendar
 
