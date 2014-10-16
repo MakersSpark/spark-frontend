@@ -10,7 +10,7 @@ https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.
 
 ```ruby
 require 'open-uri'
-require 'htmlentities' # NEEDS TO BE ADDED TO GEMFILE
+require 'icalendar' # add to Gemfile!
 
 # download the calendar and load it as a Nokogiri object
 calendar = Icalendar.parse(open("https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.com/public/basic"))
