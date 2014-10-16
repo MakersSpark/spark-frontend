@@ -13,18 +13,18 @@ require 'open-uri'
 require 'icalendar' # add to Gemfile!
 
 # download the calendar and load it as a Nokogiri object
-calendar = Icalendar.parse(open("https://www.google.com/calendar/feeds/en.uk%23holiday%40group.v.calendar.google.com/public/basic"))
+@calendar = Icalendar.parse(open("https://www.google.com/calendar/ical/henrystanley.com_uh7l5drs1sfnju9eivnml389k8%40group.calendar.google.com/private-95d6172bf50f4f3783be77c8a0dfce42/basic.ics"))
 
 # NOTE! This returns an array of calendars if there are more than one
 # in the ics document. 
 
-calendar.class # => Array
-calendar.first.class # => Icalendar::Calendar
+@calendar.class # => Array
+@calendar.first.class # => Icalendar::Calendar
 
-calendar.first.events # returns all events in the calendar
-calendar.first.events.first.summary # => "St. David's Day"
+@calendar.first.events # returns all events in the calendar
+@calendar.first.events.first.summary # => "St. David's Day"
 
-calendar.first.events.first.today? # false
+@calendar.first.events.first.today? # false
 ```
 
 #### Getting all of today's events
@@ -33,10 +33,12 @@ calendar.first.events.first.today? # false
 
 # assuming 'calendar' is an array of calendars, as in the above example
 
-calendar.first.events.each do |e|
-  # put all of today's events into an array
+def get_todays_events
   @todays_events = []
-  @todays_events << e if e.dtstart.today?
+  @calendar.first.events.each do |e|
+    # put all of today's events into an array
+    @todays_events << e if e.dtstart.today?
+  end
   @todays_events.reverse!
 end
 
