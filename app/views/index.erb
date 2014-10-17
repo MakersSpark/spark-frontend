@@ -1,55 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
 
-  <title>Google+ JavaScript Quickstart</title>
-</head>
-<body>
+ <div class="header">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="#top">top</a></li>
+        <li><a href="#calendar">calendar</a></li>
+        <li><a href="#tube">tube status</a></li>
+      </ul>
+      <h3 class="text-muted">Spark Printer Dashboard</h3>
+    </div>
 
 
-  <div>
-    <h3>Forecast weather</h3>
+  <div class="container">
+      
+    <div class='jumbotron' id="top">
+    <h3>my weather forecast</h3>
 
-    <p>Probability of rain <%= @forecast['currently']['precipProbability']%>%</p>
+    <button type="button" class="btn btn-lg btn-info">update now</button>
+
+    <p class="lead">Probability of rain <%= @forecast['currently']['precipProbability']%>%</p>
     
     <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
     
-    <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > 
+    <!-- <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > -->
+    <img class="img-rounded" src='images/sad_rain_cloud-small.png' alt="...">
 
   </div>
 
-  <div>
-    
-    <h3>Calendar</h3>
-    
+  <div class='jumbotron' id="calendar">
+  
+    <h3>my calendar events</h3>
+
+    <button type="button" class="btn btn-lg btn-info">update now</button>
+   
+<ul>
     <% @events.each do | item | %>
+
 
 
     <% if formating_time(item.start.dateTime) === formating_time(Time.new) %>
       
-     <p>Event date:        <%= formating_time(item.start.dateTime) %> </p>
-     <p>Event summary:     <%= item.summary %>        </p>
-     <p>Event description: <%= item.description %>    </p>
+  
+    <li>Event date:        <%= formating_time(item.start.dateTime) %> </li>
+    <li>Event summary:     <%= item.summary %>        </li>
+    <li>Event description: <%= item.description %>    </li>
      
-     <p>Event location:    <%= item.location %>       </p>
+    <li>Event location:    <%= item.location %>       </li>
 
      <%end%>
-
+  </ul>
 
     <%end%>
+
+  </div>
+ 
+
+  <div class="jumbotron" id="tube">
+
+  <h3>tube status</h3>
+
+  <button type="button" class="btn btn-lg btn-info">update now</button>
+
+    <table class="table table-striped">
+
+      <thead>
+          <th>line</th>
+          <th>status</th>
+        </thead>
+        
+        <tbody>
+          <% @tfl_lines.zip(@tfl_status).each do |line,status|  %>
+           <tr> 
+            <td> <%=line%>   </td>
+            <td class="<%= status.downcase.gsub(' ', '_') %>"> <%= status %> </td>
+          
+          </tr>
+            <%end%>
+        </tbody>
+  </table>
+
   </div>
 
-  <h3>Tube Status</h3>
-
-  <ul>
-    <% @tfl_lines.zip(@tfl_status).each do |line,status|  %>
-      
-      <li> <%=line%>   </li>
-      <li> <%=status%> </li>
-    <%end%>
-  </ul>
-  
+  <div class="footer">
+    © SparkTeam 2014
+  </div>
 
   
 <!--   <div id="gConnect">
@@ -91,8 +123,5 @@
     function onSignInCallback(authResult) { helper.onSignInCallback(authResult); }
 
   </script>
-</body>
-</html>
-
 
 
