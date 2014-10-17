@@ -49,7 +49,7 @@ body {
 }
 
 .good_service {
-  color: green;
+  color: #88A825;
 }
 
 .minor_delays {
@@ -57,7 +57,11 @@ body {
 }
 
 .severe_delays {
-  color: red;
+  color: #CD2C24;
+}
+
+.part_suspended{
+  color: #ABC8E2;
 }
 
 .header{
