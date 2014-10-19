@@ -1,0 +1,165 @@
+/*Spark CSS is based on spark */
+
+/* Space out content a bit */
+body {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the spark gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*line-height: 40px;*/
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    margin-top: 70px;
+    top: -120px;/*
+    padding-top: 120px; */
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.spark td{
+  text-align: left;
+}
+
+.good_service {
+  color: #88A825; /* green */
+}
+
+.minor_delays {
+  color: #FF9800; /* amber */
+}
+
+.severe_delays {
+  font-weight: bold;
+  color: #CD2C24; /* red */
+}
+
+.part_suspended{
+  color: #ABC8E2; /* grey */
+}
+
+.part_closure{
+  color: #ABC8E2; /* grey */
+}
+
+.service_closed{
+  font-weight: bold;
+  color: #CD2C24; /* red */
+}
+
+.suspended{
+  font-weight: bold;
+  color:#FF9800; /* amber */
+}
+
+.planned_closure{
+  color:#FF9800; /* amber */
+}
+
+.reduced_service{
+  color:#FF9800; /* amber */
+}
+
+.bus_service{
+  color:#FF9800; /* amber */
+}
+
+.header{
+    position: fixed; 
+    top: 0px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.header h3{
+  padding: 20px;
+}
+
+.link_wrapper{
+  padding-top: 450px; 
+  margin-top: -450px;
+  display: inline-block;
+}
+
+/* Main marketing message and sign up button */
+.spark {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.spark p{
+  margin-top: 15px;
+}
+
+.spark h3{
+  margin-top:0px;
+}
+
+.spark ul,li{
+  list-style: none;
+}
+
+.spark table{
+  margin-top: 35px;
+}
+
+.spark .btn-lg {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the spark for visual effect */
+  .spark {
+    border-bottom: 0;
+  }
+}

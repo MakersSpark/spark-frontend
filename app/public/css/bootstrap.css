@@ -4544,41 +4544,41 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-.jumbotron {
+.spark {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
 }
-.jumbotron h1,
-.jumbotron .h1 {
+.spark h1,
+.spark .h1 {
   color: inherit;
 }
-.jumbotron p {
+.spark p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
 }
-.jumbotron > hr {
+.spark > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron {
+.container .spark {
   border-radius: 6px;
 }
-.jumbotron .container {
+.spark .container {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron {
+  .spark {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron {
+  .container .spark {
     padding-right: 60px;
     padding-left: 60px;
   }
-  .jumbotron h1,
-  .jumbotron .h1 {
+  .spark h1,
+  .spark .h1 {
     font-size: 63px;
   }
 }

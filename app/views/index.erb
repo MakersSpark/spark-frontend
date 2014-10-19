@@ -1,7 +1,8 @@
 
  <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <li class="active"><a href="#top">top</a></li>
+      
+        <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="#">top</a></li>
         <li><a href="#calendar">calendar</a></li>
         <li><a href="#tube">tube status</a></li>
       </ul>
@@ -11,7 +12,7 @@
 
   <div class="container">
       
-    <div class='jumbotron' id="top">
+    <div class='spark'>
     <h3>my weather forecast</h3>
 
     <button type="button" class="btn btn-lg btn-info">update now</button>
@@ -19,13 +20,15 @@
     <p class="lead">Probability of rain <%= @forecast['currently']['precipProbability']%>%</p>
     
     <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
-    
+ 
     <!-- <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > -->
+    <span id="calendar">
     <img class="img-rounded" src='images/sad_rain_cloud-small.png' alt="...">
+
 
   </div>
 
-  <div class='jumbotron' id="calendar">
+  <div class='spark'>
   
     <h3>my calendar events</h3>
 
@@ -47,13 +50,13 @@
 
      <%end%>
   </ul>
-
+<span id="tube">
     <%end%>
 
   </div>
  
 
-  <div class="jumbotron" id="tube">
+  <div class="spark">
 
   <h3>tube status</h3>
 
