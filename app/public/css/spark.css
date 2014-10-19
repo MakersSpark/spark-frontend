@@ -1,8 +1,8 @@
-/*Spark CSS is based on spark */
+/*Spark CSS is based on Jumbotron */
 
 /* Space out content a bit */
 body {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -38,8 +38,6 @@ body {
   .container {
     max-width: 730px;
     margin-top: 70px;
-    top: -120px;/*
-    padding-top: 120px; */
   }
 }
 .container-narrow > hr {

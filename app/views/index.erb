@@ -22,7 +22,7 @@
     <p>Actual forecast: <%= @forecast['minutely']['summary']%></p>
  
     <!-- <img src=<%= "images/#{@forecast['minutely']['icon']}.jpeg"%> alt="forecast image" > -->
-    <span id="calendar">
+    <span id="calendar"></span>
     <img class="img-rounded" src='images/sad_rain_cloud-small.png' alt="...">
 
 
@@ -49,8 +49,9 @@
     <li>Event location:    <%= item.location %>       </li>
 
      <%end%>
-  </ul>
-<span id="tube">
+ <a id="tube"></a> 
+</ul>
+
     <%end%>
 
   </div>
